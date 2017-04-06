@@ -1,0 +1,5 @@
+# Composer Packages
+vendor
+
+# Distribution Directory
+dist

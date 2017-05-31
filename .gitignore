@@ -11,3 +11,6 @@ ubuntu-xenial-16.04-cloudimg-console.log
 # NPM
 node_modules
 npm-debug.log
+
+# WordPress
+uploads

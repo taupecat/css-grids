@@ -68,3 +68,4 @@ npm-debug.log
 .env
 taupecat.pem
 taupecat.key
+licenses.bash

@@ -59,8 +59,7 @@ Thumbs.db
 
 # Taupecat Studios #
 ####################
-vendor
-!web/wp-content/plugins/**/vendor			## Guard against plugins that might have a vendor subdirectory, like Yoast
+/vendor
 .vagrant
 ubuntu-xenial-16.04-cloudimg-console.log
 node_modules

@@ -1,6 +1,6 @@
 #/bin/bash
 
-URL="##URL##"
+URL="css-grids.local"
 
 openssl genrsa -out $URL.key 2048
 

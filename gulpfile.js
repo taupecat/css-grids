@@ -29,7 +29,7 @@ var gulp			= require( 'gulp' ),
 var paths = {
 	web:			__dirname + '/web',
 	src:			__dirname + '/src',
-	project:		'##PROJECT##'
+	project:		'css-grids'
 }
 
 

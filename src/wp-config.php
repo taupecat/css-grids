@@ -110,7 +110,7 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
   // Redirect to https://$primary_domain/ in the Live environment
   if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
     /** Replace www.example.com with your registered domain name */
-    $primary_domain = '##PRODUCTION_DOMAIN##';
+    $primary_domain = 'css-grids.taupecatstudios.com';
   }
   else {
     // Redirect to HTTPS on every Pantheon environment.
@@ -143,7 +143,7 @@ if (isset($_SERVER['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
  * prefix. Only numbers, letters, and underscores please!
  */
 if ( ! isset( $table_prefix ) )
-  $table_prefix = '##TABLE_PREFIX##';
+  $table_prefix = 'cssgrids_wp_';
 
 /**
  * WordPress Localized Language, defaults to English.

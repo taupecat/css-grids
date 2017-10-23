@@ -2,14 +2,14 @@
 
 // Set the default (local)
 
-$hostname			= '##URL##';
+$hostname			= 'css-grids.local';
 $scheme				= 'https://';
-$db_name			= '##DB_NAME##';
+$db_name			= 'cssgrids_site_dev';
 $db_user			= 'root';
 $db_password		= 'password';
 $db_host			= 'localhost';
 $wp_debug			= true;
-$table_prefix		= '##TABLE_PREFIX##';
+$table_prefix		= 'cssgrids_wp_';
 
 if ( isset( $_SERVER['HTTP_HOST'] ) ) {
 

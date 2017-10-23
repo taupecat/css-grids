@@ -1,7 +1,7 @@
 {
-  "name": "##PROJECT##",
+  "name": "css-grids",
   "version": "1.0.0",
-  "description": "##DESCRIPTION##",
+  "description": "Examples for my CSS Grids talk.",
   "main": "gulpfile.js",
   "dependencies": {
     "breakpoint-sass": "^2.7.1",

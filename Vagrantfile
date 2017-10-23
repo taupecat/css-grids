@@ -1,9 +1,9 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$private_ip       = '##IP_ADDRESS##'
-$hostname         = '##HOSTNAME##'
-$hostname_alias   = '##URL##'
+$private_ip       = '192.168.39.49'
+$hostname         = 'css-grids-site'
+$hostname_alias   = 'css-grids.local'
 
 # All Vagrant configuration is done below. The "2" in Vagrant.configure
 # configures the configuration version (we support older styles for

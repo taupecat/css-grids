@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DB_NAME="##DB_NAME##"
+DB_NAME="cssgrids_site_dev"
 
 apt-get update >/dev/null 2>&1
 apt-get dist-upgrade -y >/dev/null 2>&1

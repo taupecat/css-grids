@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	font-size: 48px;
+	font-family: sans-serif;
+	font-weight: bold;
+	background-color: magenta;
+	color: white;
+	padding: 20px;
+}
+
+.sidebar {
+	background-color: lightgreen;
+	font-size: 32px;
+	padding: 20px;
+}
+
+.main {
+	background-color: orange;
+	padding: 20px;
+	font-size: 32px;
+}
+
+.footer {
+	background-color: blue;
+	font-size: 24px;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: bold;
+	padding: 20px;
+}

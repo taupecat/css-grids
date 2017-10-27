@@ -5,39 +5,62 @@
 <title>Grid #2</title>
 <link rel="stylesheet" href="style.css">
 <style>
-html {
-	height: 100vh;
-}
-
-body {
-	min-height: 100vh;
-}
-
 .wrapper {
+	min-height: 100vh;
 	display: grid;
-	grid-template-areas:
-		"header header"
-		"sidebar main"
-		"footer footer";
 	grid-template-columns: 1fr 2fr;
 	grid-template-rows: auto 1fr auto;
-	min-height: 100vh;
+	/*grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+		"header"
+		"sidebar"
+		"main"
+		"footer";*/
+	/*grid-column-gap: 20px;
+	grid-row-gap: 2rem;*/
 }
 
+/*@media ( min-width: 700px ) {
+	.wrapper {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr 1fr;
+		grid-template-areas:
+			"header header"
+			"sidebar main"
+			"footer main";
+	}
+}*/
+
+/*@media ( min-width: 1200px ) {
+	.wrapper {
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas:
+			"header header"
+			"sidebar main"
+			"footer footer";
+	}
+}*/
+
 .header {
-	grid-area: header;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	/*grid-area: header;*/
 }
 
 .sidebar {
-	grid-area: sidebar;
+	/*grid-area: sidebar;*/
 }
 
 .main {
-	grid-area: main;
+	/*grid-area: main;*/
 }
 
 .footer {
-	grid-area: footer;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	/*grid-area: footer;*/
 }
 </style>
 </head>
@@ -45,31 +68,38 @@ body {
 <body>
 
 <div class="wrapper">
-	<div class="header">
-		HEADER
-	</div>
+
+	<div class="header">HEADER</div>
+
 	<div class="sidebar">
+
 		<ul>
 			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
 			<li>Donec tristique tellus in erat tincidunt, a vestibulum metus iaculis.</li>
 			<li>Proin non ligula sed eros bibendum vehicula.</li>
 		</ul>
+
 	</div>
+
 	<div class="main">
-		<p>Lick butt and make a weird face when in doubt, wash or has closed eyes but still sees you for small kitty warm kitty little balls of fur, so scratch the furniture. Meowing non stop for food hunt anything that moves.</p>
 
-		<!-- <p>Lick butt and make a weird face when in doubt, wash or has closed eyes but still sees you for small kitty warm kitty little balls of fur, so scratch the furniture. Meowing non stop for food hunt anything that moves.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p>
 
-		<p>Lick butt and make a weird face when in doubt, wash or has closed eyes but still sees you for small kitty warm kitty little balls of fur, so scratch the furniture. Meowing non stop for food hunt anything that moves.</p>
+		<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p>
 
-		<p>Lick butt and make a weird face when in doubt, wash or has closed eyes but still sees you for small kitty warm kitty little balls of fur, so scratch the furniture. Meowing non stop for food hunt anything that moves.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p>
 
-		<p>Lick butt and make a weird face when in doubt, wash or has closed eyes but still sees you for small kitty warm kitty little balls of fur, so scratch the furniture. Meowing non stop for food hunt anything that moves.</p> -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p> -->
+
 	</div>
-	<div class="footer">
-		FOOTER
-	</div>
+
+	<div class="footer">FOOTER</div>
+
 </div>
+
+<a href="grid-3.html" class="button">Next Demo</a>
 
 </body>
 </html>

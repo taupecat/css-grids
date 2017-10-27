@@ -1,3 +1,5 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 * {
 	box-sizing: border-box;
 }
@@ -35,4 +37,39 @@ body {
 	font-family: sans-serif;
 	font-weight: bold;
 	padding: 20px;
+}
+
+.button {
+	display: block;
+	position: fixed;
+	top: 1vw;
+	right: 1vw;
+	background-color: rgba( 0, 0, 0, 0.5);
+	transition: background-color 150ms ease;
+	height: 64px;
+	width: 64px;
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+	z-index: 1;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+	background-color: rgba( 0, 0, 0, 0.80 );
+}
+
+.button::before {
+	font-family: "FontAwesome";
+	content: '\f054';
+	color: rgb(255, 255, 255);
+	text-indent: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-size: 56px;
+	text-align: center;
+	line-height: 64px;
 }

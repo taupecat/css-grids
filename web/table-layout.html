@@ -4,32 +4,80 @@
 <head>
 <title>Table Layout</title>
 <style>
-/* None! */
+	.button {
+		display: block;
+		position: fixed;
+		top: 1vw;
+		right: 1vw;
+		background-color: rgba( 0, 0, 0, 0.5);
+		transition: background-color 150ms ease;
+		height: 64px;
+		width: 64px;
+		overflow: hidden;
+		text-indent: 200%;
+		white-space: nowrap;
+		z-index: 1;
+	}
+
+	.button:hover,
+	.button:active,
+	.button:focus {
+		background-color: rgba( 0, 0, 0, 0.80 );
+	}
+
+	.button::before {
+		font-family: "FontAwesome";
+		content: '\f054';
+		color: rgb(255, 255, 255);
+		text-indent: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: block;
+		font-size: 56px;
+		text-align: center;
+		line-height: 64px;
+	}
 </style>
 </head>
 
-<body>
+<body margin="0" padding="0">
 
-<table width="100%" cellpadding="20">
-	<tr>
-		<td colspan="2" bgcolor="magenta"><b><font color="#fff" size="10" face="sans-serif">HEADER</font></b><td>
-	</tr>
-	<tr valign="top">
-		<td width="33%" bgcolor="green">
-			<ul>
-				<li><font size="6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</font></li>
-				<li><font size="6">Donec tristique tellus in erat tincidunt, a vestibulum metus iaculis.</font></li>
-				<li><font size="6">Proin non ligula sed eros bibendum vehicula.</font></li>
-			</ul>
-		</td>
-		<td width="67%" bgcolor="yellow">
-			<p><font size="6">Lick butt and make a weird face when in doubt, wash or has closed eyes but still sees you for small kitty warm kitty little balls of fur, so scratch the furniture. Meowing non stop for food hunt anything that moves.</font></p>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2" bgcolor="purple"><b><font color="#fff" face="sans-serif" size="5">FOOTER</font></b></td>
-	</tr>
-</table>
+	<table width="100%" cellpadding="20" cellborder="0" cellspacing="0">
+
+		<tr>
+
+			<td colspan="2" bgcolor="magenta"><b><font color="#fff" size="10" face="sans-serif">HEADER</font></b><td>
+
+		</tr>
+
+		<tr valign="top">
+
+			<td width="33%" bgcolor="green">
+
+				<ul>
+					<li><font size="6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</font></li>
+					<li><font size="6">Donec tristique tellus in erat tincidunt, a vestibulum metus iaculis.</font></li>
+					<li><font size="6">Proin non ligula sed eros bibendum vehicula.</font></li>
+				</ul>
+
+			</td>
+
+			<td width="67%" bgcolor="yellow">
+				<p><font size="6">Lick butt and make a weird face when in doubt, wash or has closed eyes but still sees you for small kitty warm kitty little balls of fur, so scratch the furniture. Meowing non stop for food hunt anything that moves.</font></p>
+			</td>
+
+		</tr>
+
+		<tr>
+
+			<td colspan="2" bgcolor="purple"><b><font color="#fff" face="sans-serif" size="5">FOOTER</font></b></td>
+
+		</tr>
+
+	</table>
+
+	<a href="floats.html" class="button">Next Demo</a>
 
 </body>
 </html>

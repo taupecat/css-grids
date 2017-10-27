@@ -73,3 +73,21 @@ body {
 	text-align: center;
 	line-height: 64px;
 }
+
+figure {
+	background-color: rebeccapurple;
+	color: white;
+	margin: 0;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+}
+
+figcaption {
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	padding: 1rem 0;
+}

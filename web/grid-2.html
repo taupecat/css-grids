@@ -5,20 +5,48 @@
 <title>Grid #2</title>
 <link rel="stylesheet" href="style.css">
 <style>
+
+/* Grid Example #1 */
 .wrapper {
 	min-height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-template-rows: auto 1fr auto;
-	/*grid-template-columns: 1fr;
+}
+
+.header {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.footer {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.sidebar {
+	grid-column-start: 1;
+	grid-row-start: 2;
+}
+
+.main {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+
+/* Grid Example #2 */
+
+.wrapper {
+	min-height: 100vh;
+	/*display: grid;
+	grid-template-columns: 1fr;
 	grid-template-rows: repeat(4, auto);
 	grid-template-areas:
 		"header"
 		"sidebar"
 		"main"
-		"footer";*/
-	/*grid-column-gap: 20px;
-	grid-row-gap: 2rem;*/
+		"footer";
+	grid-gap: 20px;*/
 }
 
 /*@media ( min-width: 700px ) {
@@ -43,25 +71,21 @@
 	}
 }*/
 
-.header {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	/*grid-area: header;*/
+/*.header {
+	grid-area: header;
 }
 
 .sidebar {
-	/*grid-area: sidebar;*/
+	grid-area: sidebar;
 }
 
 .main {
-	/*grid-area: main;*/
+	grid-area: main;
 }
 
 .footer {
-	grid-column-start: 1;
-	grid-column-end: 3;
-	/*grid-area: footer;*/
-}
+	grid-area: footer;
+}*/
 </style>
 </head>
 
@@ -70,16 +94,6 @@
 <div class="wrapper">
 
 	<div class="header">HEADER</div>
-
-	<div class="sidebar">
-
-		<ul>
-			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-			<li>Donec tristique tellus in erat tincidunt, a vestibulum metus iaculis.</li>
-			<li>Proin non ligula sed eros bibendum vehicula.</li>
-		</ul>
-
-	</div>
 
 	<div class="main">
 
@@ -92,6 +106,16 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p> -->
+
+	</div>
+
+	<div class="sidebar">
+
+		<ul>
+			<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+			<li>Donec tristique tellus in erat tincidunt, a vestibulum metus iaculis.</li>
+			<li>Proin non ligula sed eros bibendum vehicula.</li>
+		</ul>
 
 	</div>
 

@@ -18,17 +18,6 @@
 		"footer";
 }
 
-@media ( min-width: 700px ) {
-	.wrapper {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto 1fr 1fr;
-		grid-template-areas:
-			"header header"
-			"main main"
-			"sidebar footer";
-	}
-}
-
 @media ( min-width: 1200px ) {
 	.wrapper {
 		grid-template-columns: 1fr 2fr;
@@ -56,15 +45,28 @@
 	grid-area: footer;
 }
 
+figure {
+	background-color: rgba( 0, 255, 255, 0.5 );
+	margin: 0;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+}
+
+figcaption {
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+	padding: 1rem 0;
+}
+
 /*.main {
 	display: grid;
-	grid-template-columns: repeat( auto-fill, minmax( 200px, 1fr ) );
-	grid-column-gap: 5px;
+	grid-template-columns: repeat( auto-fill, minmax( 300px, 1fr ) );
+	grid-gap: 5px;
 }*/
-
-.main p {
-	background-color: rgba( 0, 255, 255, 0.5 );
-}
 </style>
 </head>
 
@@ -74,6 +76,73 @@
 
 	<div class="header">HEADER</div>
 
+	<div class="main">
+
+		<figure>
+			<img src="images/cat.jpg">
+
+			<figcaption>
+				Warren J. Cat
+			</figcaption>
+
+		</figure>
+
+		<figure>
+			<img src="images/cat.jpg">
+
+			<figcaption>
+				Warren J. Cat
+			</figcaption>
+
+		</figure>
+
+		<figure>
+			<img src="images/cat.jpg">
+
+			<figcaption>
+				Warren J. Cat
+			</figcaption>
+
+		</figure>
+
+		<figure>
+			<img src="images/cat.jpg">
+
+			<figcaption>
+				Warren J. Cat
+			</figcaption>
+
+		</figure>
+
+		<figure>
+			<img src="images/cat.jpg">
+
+			<figcaption>
+				Warren J. Cat
+			</figcaption>
+
+		</figure>
+
+		<figure>
+			<img src="images/cat.jpg">
+
+			<figcaption>
+				Warren J. Cat
+			</figcaption>
+
+		</figure>
+
+		<figure>
+			<img src="images/cat.jpg">
+
+			<figcaption>
+				Warren J. Cat
+			</figcaption>
+
+		</figure>
+
+	</div>
+
 	<div class="sidebar">
 
 		<ul>
@@ -81,20 +150,6 @@
 			<li>Donec tristique tellus in erat tincidunt, a vestibulum metus iaculis.</li>
 			<li>Proin non ligula sed eros bibendum vehicula.</li>
 		</ul>
-
-	</div>
-
-	<div class="main">
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat.</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris,</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis massa ut tortor pulvinar, porta feugiat magna consequat. Proin posuere gravida diam nec aliquam. Etiam mollis, lectus at aliquam mollis, lacus augue convallis mauris, eget tempus magna nisi ac nisi. Nunc sollicitudin sem ut nisl viverra accumsan.</p>
 
 	</div>
 
